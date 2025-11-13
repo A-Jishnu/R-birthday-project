@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Riddhi Birthday</title>
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Fonts (keep these so TITAN ONE and Dancing Script render) -->
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&family=Nerko+One&family=Sriracha&family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-
   <div id="wrapper">
 
-    <!-- Flags -->
     <div class="flag__birthday">
-      <img src="1.png" width="350" class="flag__left">
-      <img src="1.png" width="350" class="flag__right">
+      <img src="1.png" class="flag__left">
+      <img src="1.png" class="flag__right">
     </div>
 
-    <!-- CONTENT AREA -->
     <div class="content">
-
-      <!-- LEFT SIDE -->
       <div class="left">
-
         <div class="title">
-          <h1 class="happy">Happy</h1>
-          <h1 class="birthday">Birthday</h1>
+          <h1 class="happy">
+            <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span>
+          </h1>
+          <h1 class="birthday">
+            <span>B</span><span>i</span><span>r</span><span>t</span><span>h</span><span>d</span><span>a</span><span>y</span>
+          </h1>
 
-          <div class="hat">
-            <img src="hat.png" width="120">
-          </div>
+          <div class="hat"><img src="hat.png" alt="hat"></div>
         </div>
 
-        <!-- FIXED DATE -->
         <div class="date__of__birth">
           <span class="date-line">14 November</span>
         </div>
 
-        <!-- BUTTON -->
-        <button id="btn__letter" class="letter-btn">
-          Click Here Riddhi <i class="fa-regular fa-envelope"></i>
-        </button>
-
-        <!-- SONG BUTTONS -->
-        <div class="song-buttons">
-          <button class="song-btn purple" onclick="playSong('song1.mp3')">
-            <img src="song1.png"> Enchanted
-          </button>
-
-          <button class="song-btn rain" onclick="playSong('song2.mp3')">
-            <img src="song2.png"> Rain Wedding
-          </button>
-
-          <button class="song-btn gold" onclick="playSong('song3.mp3')">
-            <img src="song3.png"> Mantra
+        <div class="btn">
+          <button id="btn__letter">
+            <div class="mail">Click Here Riddhi <i class="fa-regular fa-envelope"></i></div>
           </button>
         </div>
 
-        <!-- PLAYER -->
+        <div class="song-buttons">
+          <button class="song-btn purple" onclick="playSong('song1.mp3')">
+            <img src="song1.png" alt=""> Enchanted
+          </button>
+
+          <button class="song-btn rain" onclick="playSong('song2.mp3')">
+            <img src="song2.png" alt=""> Rain Wedding
+          </button>
+
+          <button class="song-btn gold" onclick="playSong('song3.mp3')">
+            <img src="song3.png" alt=""> Mantra
+          </button>
+        </div>
+
         <div class="music-controls">
           <audio id="music-player"></audio>
           <input type="range" id="progressBar" value="0" max="100">
@@ -68,48 +65,41 @@
             <button id="nextSongBtn"><i class="fa-solid fa-forward"></i></button>
           </div>
         </div>
-
       </div>
 
-      <!-- RIGHT SIDE -->
       <div class="right">
-
         <div class="box__account">
-
-          <!-- PROFILE IMAGE FIXED -->
           <div class="circle-frame">
-            <img src="unnamed.jpg" class="profile-img">
+            <img src="unnamed.jpg" class="profile-img" alt="Riddhi">
           </div>
 
-          <div class="name">
-            <i class="fa-solid fa-heart"></i>
-            Dear Riddhi
-            <i class="fa-solid fa-heart"></i>
-          </div>
+          <div class="name"><i class="fa-solid fa-heart"></i><span>Dear Riddhi</span><i class="fa-solid fa-heart"></i></div>
 
-          <!-- BALLOONS -->
-          <div class="balloon_one"><img src="balloon1.png"></div>
-          <div class="balloon_two"><img src="balloon2.png"></div>
-
+          <div class="balloon_one"><img src="balloon1.png" alt="balloon"></div>
+          <div class="balloon_two"><img src="balloon2.png" alt="balloon"></div>
         </div>
 
+        <div class="cricle">
+          <div class="text__cricle">
+            <span>h</span><span>a</span><span>p</span><span>p</span><span>y</span><span>-</span>
+            <span>b</span><span>i</span><span>r</span><span>t</span><span>h</span><span>d</span><span>a</span><span>y</span>
+          </div>
+        </div>
       </div>
-
     </div>
+
+    <!-- decorations -->
+    <div class="decorate_bottom"><img src="decorate.png" alt=""></div>
+    <div class="smiley__icon"><img src="smiley_icon.png" alt=""></div>
 
   </div>
 
 <script>
-  let songs = ["song1.mp3", "song2.mp3", "song3.mp3"];
-  let currentSong = 0;
-  const player = document.getElementById("music-player");
-  const progressBar = document.getElementById("progressBar");
-
-  function playSong(src) {
+  const player = document.getElementById('music-player');
+  function playSong(src){
     player.src = src;
     player.play();
   }
 </script>
-
 </body>
 </html>
