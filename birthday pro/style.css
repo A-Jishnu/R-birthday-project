@@ -1414,6 +1414,38 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+
+  h1, h2, h3, .title {
+    font-size: 1.8rem !important;
+  }
+
+  .btn,
+  .music-btn,
+  .date-box,
+  .custom-btn {
+    width: 90% !important;
+    margin: 10px auto !important;
+    font-size: 1rem !important;
+    padding: 12px 18px !important;
+  }
+
+  .circle-frame {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  img.profile-img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .music-control {
+    transform: scale(0.8);
+  }
+}
+
+
 
 
 
