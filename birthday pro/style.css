@@ -1288,6 +1288,92 @@ body {
     opacity: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .title .hat img {
+    width: 90px !important;
+    top: -60px !important;
+    right: -40px !important;
+  }
+
+  .date__of__birth {
+    width: 220px !important;
+    height: 45px !important;
+    font-size: 1rem;
+  }
+
+  #btn__letter {
+    width: 200px;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .song-buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .song-btn {
+    flex: 1 1 100px;
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    min-width: 110px;
+  }
+
+  .song-btn img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .music-controls {
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  #progressBar {
+    width: 220px;
+  }
+
+  .music-controls .buttons button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .right .image {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .name span {
+    font-size: 1rem;
+  }
+
+  .flag__birthday img {
+    width: 200px !important;
+  }
+
+  .decorate_star,
+  .decorate_flower--one,
+  .decorate_flower--two,
+  .decorate_flower--three {
+    display: none; /* Optional: remove small decor on small screens */
+  }
+}
+
+
 
 
 
